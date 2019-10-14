@@ -1,5 +1,8 @@
+from methods.linear.calcLinear import calcLinearLine
+
+
 def main():
-    pass
+    print(calcLinearLine(0.5, 4, 10))
 
 
 if __name__ == '__main__':
