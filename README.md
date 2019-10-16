@@ -1,2 +1,2 @@
 # GraphSolver
-An application for solving linear, quadratic graphs.
+An application for solving linear/quadratic graphs.

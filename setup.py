@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -9,7 +9,7 @@ with open('LICENSE') as f:
 setup(
     name='GraphSolver',
     version='0.0.1',
-    description='An application for solving linear\quadratic graphs.',
+    description='An application for solving linear/quadratic graphs.',
     long_description=readme,
     author='altf_four',
     author_email='ayhamaboualfadl@gmail.com',
