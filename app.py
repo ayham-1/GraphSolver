@@ -1,8 +1,7 @@
-from methods.linear.calcLinear import calcLinearLine
-
+from Ui import Ui
 
 def main():
-    print(calcLinearLine(0.5, 4, 10))
+    Ui()
 
 
 if __name__ == '__main__':

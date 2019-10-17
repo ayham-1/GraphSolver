@@ -1,3 +1,9 @@
-def calcLinearLine(a, c, length):
-    result = [(0-length, a*(0 - length)), (0-length, a*length)]
-    return result
+class Linear:
+
+    def __init__(self, a, c, length):
+        self.a = a
+        self.c = c
+        self.length = length
+
+    def calc_linear_line(self):
+        print([(0 - self.length, self.a * (0 - self.length)), (0 - self.length, self.a * self.length)])
