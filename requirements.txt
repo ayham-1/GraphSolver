@@ -1,5 +1,6 @@
 
 PyQt5==5.13.1
+requests==2.22.0
 =======
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
