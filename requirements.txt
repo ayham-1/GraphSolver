@@ -1,1 +1,12 @@
+
 PyQt5==5.13.1
+=======
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
+from linear import *
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import sys
+
