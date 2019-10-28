@@ -11,7 +11,7 @@ class Linear:
     def calc_intercept(self, x, y):
 
     	y1 = (x + y) / 3
-    	y2 = ((3 * x) - (2 * y1) / 4
+    	y2 = ((3 * x) - (2 * y1)) / 4
 
-    	print("Intersect at {}".format(y2))
+        return y2
 
