@@ -1,7 +1,7 @@
 import math
 
-class LinearIntercept:
 
+class LinearIntercept:
     def __init__(self, a, c):
         # Line eq: y = ax + c
         self.a = a
