@@ -1,6 +1,6 @@
 import math
 
-class Linear:
+class LinearIntercept:
 
     def __init__(self, a, c):
         # Line eq: y = ax + c
