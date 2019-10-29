@@ -1,22 +1,28 @@
 import math
 
 
-def calcLinearIntersection(line1, line2):
-    """
-    This function accepts two lines of Linear class
-    and returns the coordinates of intersection between the two lines
+class LinearIntercept:
+    def __init__(self, a, c):
+        # Line eq: y = ax + c
+        self.a = a
+        self.c = c
 
-    If there is no intercept it returns 0
-    If there are infinite intercepts it return math.inf
-    If there is one unique intercept it returns a tuple with (x, y)
-    """
+    def calcLinearIntersection(self, line):
+        """
+        This function accepts two lines of Linear class
+        and returns the coordinates of intersection between the two lines
 
-    if line1.a == line2.a:
-        if line1.c == line2.c:
-            return math.inf
-        return 0
+        If there is no intercept it returns 0
+        If there are infinite intercepts it return math.inf
+        If there is one unique intercept it returns a tuple with (x, y)
+        """
 
-    x = (line2.c-line1.c)/(line1.a - line2.a)
-    y = line1.a*(line2.c - line1.c)/(line1.a - line2.a) + line1.c
+        if self.a == line.a:
+            if self.c == line.c:
+                return math.inf
+            return 0
 
-    return (x, y)
+        x = (line.c-self.c)/(self.a - line.a)
+        y = self.a*(line.c - self.c)/(self.a - line.a) + self.c
+
+        return (x, y)
