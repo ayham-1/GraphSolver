@@ -1,5 +1,6 @@
 import math
 
+
 def calcLinearIntersection(line1, line2):
     """
     This function accepts two lines of Linear class

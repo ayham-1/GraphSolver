@@ -1,5 +1,6 @@
 import math
 
+
 class Linear:
 
     def __init__(self, a, c, length):
