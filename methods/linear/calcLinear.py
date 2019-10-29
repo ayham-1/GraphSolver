@@ -10,7 +10,7 @@ class Linear:
     def calc_linear_line(self):
         print([(0 - self.length, self.a * (0 - self.length)), (0 - self.length, self.a * self.length)])
 
-    def calcLineaIntersection(self, line):
+    def calcLinearIntersection(self, line):
         """
         This function accepts one line of Linear class
         and returns the coordinates of intersection between the self and the line passed
