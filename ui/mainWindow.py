@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets, uic
+from ui.linearWindow import linearWin
 
 
 class mainWin(QtWidgets.QMainWindow):
@@ -20,6 +21,8 @@ class mainWin(QtWidgets.QMainWindow):
 
     def runBtnPressed(self):
         print(self.equval)
+        if self.equval == "Linear":
+            linearWin()
 
     def onEquCboChanged(self, text):
         self.equval = text
