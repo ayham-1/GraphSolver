@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, uic
-from methods.linear.calcLinear import Linear
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 class linearWin(QtWidgets.QMainWindow):
@@ -25,8 +25,11 @@ class linearWin(QtWidgets.QMainWindow):
     def calcBtnPressed(self):
         m = int(self.mBox.text())
         c = int(self.cBox.text())
-        linear = Linear(m, c, 2)
-        plt.plot(linear.calc_linear_line())
-        plt.ylabel("Y")
-        plt.xlabel("X")
+        x = np.linspace(-5, 5, 100)
+        y = m * x + c
+        plt.plot(x, y, '-r', label='y=' + str(m) + 'x' + '+' + str(c))
+        plt.title("Graph of y=" + str(m) + "x" + "+" + str(c))
+        plt.xlabel('x', color='#1C2833')
+        plt.ylabel('y', color='#1C2833')
+        plt.legend(loc="upper left")
         plt.show()
