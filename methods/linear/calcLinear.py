@@ -2,15 +2,14 @@ import math
 
 
 class Linear:
-
     def __init__(self, a, c, length):
         self.a = a
         self.c = c
         self.length = length
 
     def calc_linear_line(self):
-        print([(0 - self.length, self.a * (0 - self.length)),
-               (0 - self.length, self.a * self.length)])
+        return [(0 - self.length, self.a * (0 - self.length)),
+                (0 - self.length, self.a * self.length)]
 
     def calcLinearIntersection(self, line):
         """
@@ -28,7 +27,7 @@ class Linear:
                 return math.inf
             return 0
 
-        x = (line.c-self.c)/(self.a - line.a)
-        y = self.a*(line.c - self.c)/(self.a - line.a) + self.c
+        x = (line.c - self.c) / (self.a - line.a)
+        y = self.a * (line.c - self.c) / (self.a - line.a) + self.c
 
         return (x, y)
