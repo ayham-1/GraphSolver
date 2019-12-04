@@ -51,7 +51,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Linear Intresect</string>
+      <string>LinearIntercept</string>
      </property>
     </item>
    </widget>

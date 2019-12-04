@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets, uic
 from ui.linearWindow import linearWin
+from ui.linearInterceptWindow import linearInterceptWin
 
 
 class mainWin(QtWidgets.QMainWindow):
@@ -23,6 +24,9 @@ class mainWin(QtWidgets.QMainWindow):
         print(self.equval)
         if self.equval == "Linear":
             linearWin()
+        elif self.equval == "LinearIntercept":
+            print(self.equval)
+            linearInterceptWin()
 
     def onEquCboChanged(self, text):
         self.equval = text
