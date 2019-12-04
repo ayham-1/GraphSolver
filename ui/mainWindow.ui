@@ -54,6 +54,11 @@
       <string>LinearIntercept</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>Quadratic</string>
+     </property>
+    </item>
    </widget>
    <widget class="QPushButton" name="runBtn">
     <property name="geometry">
