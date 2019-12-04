@@ -59,6 +59,11 @@
       <string>Quadratic</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>QuadraticIntercept</string>
+     </property>
+    </item>
    </widget>
    <widget class="QPushButton" name="runBtn">
     <property name="geometry">

@@ -2,6 +2,7 @@ from PyQt5 import QtWidgets, uic
 from ui.linearWindow import linearWin
 from ui.linearInterceptWindow import linearInterceptWin
 from ui.quadraticWindow import quadraticWin
+from ui.quadraticInterceptWindow import quadraticInterceptWin
 
 
 class mainWin(QtWidgets.QMainWindow):
@@ -29,6 +30,8 @@ class mainWin(QtWidgets.QMainWindow):
             linearInterceptWin()
         elif self.equval == "Quadratic":
             quadraticWin()
+        elif self.equval == "QuadraticIntercept":
+            quadraticInterceptWin()
 
     def onEquCboChanged(self, text):
         self.equval = text
