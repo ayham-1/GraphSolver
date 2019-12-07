@@ -23,3 +23,7 @@ There is 4 options for graph:
 
 
 * **Quadratic intercept** to find the interception between two quadratic graphs
+
+## Adding Contributers
+to add the contibuters for the **Graph Solver** projct run:
+`python3 contributers.py` and see the magic happen infront of you
