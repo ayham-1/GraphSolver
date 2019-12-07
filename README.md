@@ -26,4 +26,8 @@ There is 4 options for graph:
 
 ## Adding Contributers
 to add the contibuters for the **Graph Solver** projct run:
-`python3 contributers.py` and see the magic happen infront of you
+
+
+`python3 conmmits.py`
+
+and see the magic happen infront of you
