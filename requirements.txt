@@ -1,13 +1,5 @@
 
 PyQt5==5.13.1
-requests==2.22.0
-=======
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
-from linear import *
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import sys
-
+requests==2.18.4
+matplotlib==3.1.2
+numpy==1.17.4 
