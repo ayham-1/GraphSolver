@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets, uic
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 class linearInterceptWin(QtWidgets.QMainWindow):
     def __init__(self):
@@ -28,11 +29,25 @@ class linearInterceptWin(QtWidgets.QMainWindow):
         self.ui.show()
 
     def calcBtnPressed(self):
-        m1 = int(self.line1mBox.text())
-        c1 = int(self.line1cBox.text())
-        m2 = int(self.line2mBox.text())
-        c2 = int(self.line2cBox.text())
-        x = (c2 - c1) / (m1 - m2)
-        y = m1 * x + c1
-        self.resultXBox.setText(str(x))
-        self.resultYBox.setText(str(y))
+
+        m1 = float(self.line1mBox.text())
+        c1 = float(self.line1cBox.text())
+        m2 = float(self.line2mBox.text())
+        c2 = float(self.line2cBox.text())
+        x = np.linspace(-5,5,100)
+        xm = (c2 - c1) / (m1 - m2)
+        y1 = m1 * x + c1
+        y2 = m2 * x + c2
+        ym = m1 * xm + c1
+        self.resultXBox.setText(str(xm))
+        self.resultYBox.setText(str(ym))
+        plt.figure(num="Linear Intercept")
+        plt.plot(x, y1, '-r')
+        plt.plot(x, y2, 'limegreen')
+        plt.scatter(xm,ym, color="black")
+        plt.xlabel('x', color='#1C2833')
+        plt.ylabel('y', color='#1C2833')
+        plt.axhline()
+        plt.axvline()
+        plt.grid()
+        plt.show()
