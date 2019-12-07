@@ -23,13 +23,18 @@ class linearWin(QtWidgets.QMainWindow):
         self.ui.show()
 
     def calcBtnPressed(self):
-        m = int(self.mBox.text())
-        c = int(self.cBox.text())
+        m = float(self.mBox.text())
+        c = float(self.cBox.text())
         x = np.linspace(-5, 5, 100)
         y = m * x + c
+        plt.figure(num="Linear Graph")
         plt.plot(x, y, '-r', label='y=' + str(m) + 'x' + '+' + str(c))
+        plt.axhline()
+        plt.axvline()
         plt.title("Graph of y=" + str(m) + "x" + "+" + str(c))
         plt.xlabel('x', color='#1C2833')
         plt.ylabel('y', color='#1C2833')
         plt.legend(loc="upper left")
+        plt.grid()
         plt.show()
+                                                                                                                                                                                                         
