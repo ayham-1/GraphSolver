@@ -1,5 +1,5 @@
 # GraphSolver
-An application for solving linear/quadratic graphs.
+An application for solving linear/quadratic graphs and finding the interception.
 ## Requirements file
 After installing GraphSolver.zip to install requirements, run:
 
