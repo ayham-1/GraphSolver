@@ -75,7 +75,7 @@ class quadraticInterceptWin(QtWidgets.QMainWindow):
             y1 = a1 * x1 * x1 + b1 * x1 + c1
             self.resultBox.append("One Intersect: \n (x: " + str(round(x1,2)) + ", y:" +
                                   str(round(y1,2)))
-            plt.figure(num="Quadratic Intercep")
+            plt.figure(num="Quadratic Intersept")
             plt.plot(x*2,yf,'-r',label="Graph 1")
             plt.plot(x*2,ys,'limegreen',label="Graph 2")
             plt.axhline()
@@ -93,7 +93,7 @@ class quadraticInterceptWin(QtWidgets.QMainWindow):
             x2 = (-b - math.sqrt(discriminant)) / (2 * a)
             y2 = a1 * x2 * x2 + b1 * x2 + c1
             self.resultBox.append("Two Intersect: \n 1. (x: " + str(round(x1,2)) +", y: " + str(round(y1,2)) + "\n 2. (x: " + str(round(x2,2)) +", y: " + str(round(y2,2)))
-            plt.figure(num="Quadratic Intercep")
+            plt.figure(num="Quadratic Intersect")
             plt.plot(x*2,yf,'-r',label="Graph 1")
             plt.plot(x*2,ys,'limegreen',label="Graph 2")
             plt.axhline()
