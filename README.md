@@ -28,6 +28,6 @@ There is 4 options for graph:
 to add the contibuters for the **Graph Solver** projct run:
 
 
-`python3 conmmits.py`
+`python3 commits.py`
 
 and see the magic happen infront of you
