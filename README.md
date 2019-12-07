@@ -13,13 +13,13 @@ to start the app run:
 and the menu window will pop up.
 There is 4 options for graph:
 
-* Linear to graph a linear equation *y= mx + c*
+* `Linear to graph` a linear equation *y= mx + c*
 
 
-* Linear intercept to find the interception between two lines 
+* `Linear intercept` to find the interception between two lines 
 
 
-* Quadratic to graph quadratic equation *y = ax^2 + bx + c*
+* `Quadratic` to graph quadratic equation *y = ax^2 + bx + c*
 
 
-* Quadratic intercept to find the interception between two quadratic graphs
+* `Quadratic` intercept to find the interception between two quadratic graphs
