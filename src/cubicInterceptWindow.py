@@ -79,7 +79,7 @@ class cubicInterceptWin(QtWidgets.QMainWindow):
         elif discriminant == 0.0:
             x1 = -b / (2 * a)
             y1 = a1 * x1**3 + b1 * x1**2 + c1 * x1 + d1
-            self.resultBox.append("One Intersect: \n (x: " + str(round(x1,2)) + ", y:" + str(round(y1,2)))
+            self.resultBox.append("One Intersect: \n (x: " + str(round(x1,2)) + ", y:" + str(round(y1,2))
             plt.figure(num="Cubic Intercep")
             plt.plot(x*2,yf,'-r',label="Graph 1")
             plt.plot(x*2,ys,'limegreen',label="Graph 2")
@@ -96,7 +96,7 @@ class cubicInterceptWin(QtWidgets.QMainWindow):
             y1 = a1 * x1 * x1 + b1 * x1 + c1*x1 + d1
             x2 = (-b - math.sqrt(discriminant)) / (2 * a)
             y2 = a1 * x2**3 + b1 * x2**2 + c1*x1 + d1
-            self.resultBox.append("Two Intersect: \n 1. (x: " + str(round(x1,2)) +", y: " + str(round(y1,2))) + "\n 2. (x: " + str(round(x2,2)) +", y: " + str(round(y2,2))))
+            self.resultBox.append("Two Intersect: \n 1. (x: " + str(round(x1,2)) +", y: " + str(round(y1,2))) + "\n 2. (x: " + str(round(x2,2)) +", y: " + str(round(y2,2))
             plt.figure(num="Cubic Intercept")
             plt.plot(x*2,yf,'-r',label="Graph 1")
             plt.plot(x*2,ys,'limegreen',label="Graph 2")
@@ -109,8 +109,3 @@ class cubicInterceptWin(QtWidgets.QMainWindow):
             plt.legend(loc='upper left')
             plt.grid()
             plt.show()
-
-
-~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-~                                   
