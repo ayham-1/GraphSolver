@@ -28,8 +28,8 @@ class cubicWin(QtWidgets.QMainWindow):
         c = float(self.cBox.text())
         d = float(self.dBox.text())
 
-        x = np.linspace(-10,10,100)
-        y = a * x**3 + b * x + c * x + d
+        x = np.arange(-5,5,0.5)
+        y = [(a * i**3 + b * i**2 + c * i + d) for i in x]
 
         plt.figure(num="Cubic Graph")
         graph = "y="  +str(a) + 'x^3 + ' + str(b) + '*x^2 + ' + str(c) + str(d)
@@ -42,4 +42,3 @@ class cubicWin(QtWidgets.QMainWindow):
         plt.axvline()
         plt.grid()
         plt.show()
-~                    
