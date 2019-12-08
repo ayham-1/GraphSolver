@@ -3,7 +3,7 @@ An application for solving linear/quadratic graphs and finding the interception.
 ## Requirements file
 After installing GraphSolver.zip to install requirements, run:
 
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 ## Running App:
 to start the app run: 
